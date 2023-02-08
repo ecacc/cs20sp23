@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>House Cleaners R Us</title>
+<meta name=’viewport’ content=”width=devide-width, initial-scale=1”>
+<style type="text/css">
+	body{background-image: url("housebackground.jpg"); background-size: cover;}
+	.header {background-color: rgb(250, 244, 222)}
+	ul.nav a {text-decoration:none; color: rgb(174, 217, 225); font-size: 24px; padding-top: 5px; text-align:right}
+	ul.nav a:hover {border-top: 1px solid rgb(174, 217, 225)}
+	ul.nav {list-style-type: none; padding-top: 15px;}
+	ul.nav li {display: inline-block; padding-right: 20px;}
+	h1.logo{font-family:"Gills Sans"; color:rgb(255, 167, 158); font-size: 50px; text-align:left; padding-right: 550px; padding-left: 0px}
+
+	@media (max-width: 1486px) {ul.nav li {padding-right: 15px}}
+	@media (max-width: 1490px) {h1.logo {padding-right: 500px}}
+	@media (max-width: 1425px) {h1.logo {padding-right: 450px}}
+	@media (max-width: 1370px) {h1.logo {padding-right: 400px}}
+	@media (max-width: 1320px) {h1.logo {padding-right: 350px}}
+	@media (max-width: 1270px) {h1.logo {padding-right: 300px}}
+	@media (max-width: 1220px) {h1.logo {padding-right: 250px}}
+	@media (max-width: 1180px) {h1.logo {padding-right: 200px}}
+	@media (max-width: 1120px) {h1.logo {font-size: 40px}; ul.nav a {font-size: 20px}}
+	@media (max-width: 1030px) {h1.logo {padding-right: 150px}}
+	@media (max-width: 980px) {h1.logo {padding-right: 100px}}
+	@media (max-width: 930px) {h1.logo {font-size: 30px}; ul.nav a {font-size: 15px}}
+	@media (max-width: 836px) {h1.logo {padding-right: 50px}}
+	@media (max-width: 785px) {h1.logo {padding-right: 350}}
+	@media (max-width: 735px) {h1.logo {padding-right: 300}}
+	@media (max-width: 685px) {h1.logo {padding-right: 250px}}
+	@media (max-width: 635px) {h1.logo {padding-right: 200px}}
+	@media (max-width: 588px) {h1.logo {padding-right: 150px}}
+	@media (max-width: 535px) {h1.logo {padding-right: 100px}}
+
+	.footer {background-color: rgb(250, 244, 222); height: 80px; margin-left: 0px !important; margin-right: 0px !important}
+	ul.footer {list-style-type: none; color: rgb(174, 217, 225); padding-top: 13px;}
+	
+
+	.content{content: ""; display: table; clear: both;}
+
+	.page {background-color: rgb(185, 243, 231); width: 35%; float: left; margin: 45px 110px 45px}
+	h2 {color:rgb(95, 101, 115); -webkit-text-stroke: .2px rgb(95, 101, 115); text-align: center; font-size: 25px; padding-top: 30px; padding-left: 3px; padding-right: 3px}
+	p {color: rgb(160, 171, 199); font-size: 20px; padding-bottom: 16px; padding-left: 10px; line-height: 30px; padding-right: 10px;
+		text-align: center}
+	p.quote {text-align: center; padding-left: 30px; padding-right: 30px; padding-bottom: 30px; color: rgb(255, 167, 158); font-size: 25px;}
+	.form{background-color: rgb(185, 243, 231); width: 35%; float: left;  margin: 45px 110px 45px}
+	p.formInfo{color: rgb(160, 171, 199); font-size: 20px; padding-bottom: 0px; padding-left: 10px; line-height: 30px; padding-right: 10px;
+		text-align: center}
+	textarea{resize: none}
+
+	@media (max-width: 1505px) {.page {margin-left: 100px} .form {margin-left: 100px}}
+	@media (max-width: 1435px) {.page {margin-left: 90px} .form {margin-left: 90px}}
+	@media (max-width: 1370px) {.page {margin-left: 80px} .form {margin-left: 80px}}
+	@media (max-width: 1300px) {.page {margin-left: 70px} .form {margin-left: 70px}}
+	@media (max-width: 1235px) {.page {margin-left: 60px} .form {margin-left: 60px}}
+	@media (max-width: 1170px) {.page {margin-left: 50px} .form {margin-left: 50px}}
+	@media (max-width: 1100px) {.page {margin-left: 40px} .form {margin-left: 40px}}
+	@media (max-width: 1033px) {.page {margin-left: 30px} .form {margin-left: 30px}}
+	@media (max-width: 969px) {.page {width: 70%; margin-left: 100px} .form {width: 70%; margin-left: 100px}}
+	@media (max-width: 565px) {.page {margin-left: 60px} .form {margin-left: 60}}
+	@media (max-width: 516px) {.page {margin-left: 40} .form {margin-left: 40}}
+	@media (max-width: 380px) {.page {width: 80%; margin-left: 200px} .form {width: 80%; margin-left: 200px}}
+
+	@media (max-width: 1350px) {h2 {font-size: 32px} p {font-size: 18px} p.quote {font-size: 23px}}
+	@media (max-width: 1280px) {p.formInfo {font-size: 18px} h2 {font-size: 30px}}
+	@media (max-width: 1285px) {p.quote {font-size: 21px}}
+	@media (max-width: 1124px) {p {line-height: 29px}}
+	@media (max-width: 1100px) {p {font-size: 17px}}
+	@media (max-width: 1025px) {p.quote {font-size: 19px}}
+
+
+	@media (max-width: 1430px) {textarea{width: 400px}}
+	@media (max-width: 1260px) {textarea{width: 350px}}
+	@media (max-width: 1100px) {textarea{width: 300px}}
+
+
+</style>
+</head>
+
+<body>
+
+<div class='header'>
+    <ul class='nav'>
+		<li><h1 class='logo'><img src="logo.png" height="50"/>&nbsp;House Cleaners R Us</h1></li>
+	    <li><a href=”#”>HOME</a></li>
+		<li><a href=”#”>SERVICES</a></li>
+		<li><a href=”#”>CONTACT</a></li>
+	</ul>
+</div>
+
+<div class='content'>
+<div class='page'>
+	<h2>We Will Make Your House Look As Good As New!</h2>
+	<p>7 days a week cleaning service. Committed to quality cleaning. We never deny a customer and will clean any mess no matter what.
+		We will be in and out of your house as fast as possible, leaving it is pristine shape. Our prices are affordable for all types 
+		of people and we're half the price of other house cleaners in the area. We would be honored to be invited into your home!
+	</p>
+	<p class='quote'>"I was amazed by the results of my house cleaning. I have been struggling to keep my place nice while working from home
+		and in just 3 hours, it looked like a completely different house." — Katherine W
+	</p>
+</div>
+
+<div class='form'>
+	<form>
+		<h2>Set Up An Appointment Today!</h2>
+		<p class='formInfo'>
+		<label form="textNameId">Name: </label> <input type='text' name-'txtName' id='txtNameId'>
+		<br />
+		<label form="textAddressId">Address: </label> <input type='text' name-'addName' id='addNameId'>
+		<br />
+		<br />
+		What would you like to be cleaned?
+		<br />
+		<input type="checkbox" name='choice1'>Kitchen <br />
+    	<input type="checkbox" name='choice2'>Living Room <br />
+		<input type="checkbox" name='choice3'>Bathroom <br />
+		<input type="checkbox" name='choice4'>Bedroom <br />
+		<br />
+		If you have any sort of unique circumstance, describe it here:
+		<br /> <textarea rows="2" cols="60"></textarea>
+		<br /> <br />
+		How did you hear about us? <br />
+		<select size="1">
+			<option>Friend</option>
+			<option>Internet</option>
+			<option>Advertisement</option>
+			<option>Other</option>
+		</select>
+		<br />
+		<br />
+		<input type = 'submit'>
+	</p>
+	</form>
+</div>
+</div>
+
+
+<div class='footer'>
+	<ul class='footer'>
+		<li>100 Lane Hall</li>
+		<li>Somerville, MA 01244 </li>
+	    <li>978-555-5555</li>
+		<li>housecleanrus@gmail.com</li>
+	</ul>
+</div>
+
+
+
+</body>
+</html>
