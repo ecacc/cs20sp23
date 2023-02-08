@@ -1,0 +1,159 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>House Cleaners R Us</title>
+<meta name='viewport' content="width=devide-width, initial-scale=1">
+<style type="text/css">
+	.header {background-color: rgb(250, 244, 222)}
+	ul.nav a {text-decoration:none; color: rgb(174, 217, 225); font-size: 24px; padding-top: 5px; text-align:right}
+	ul.nav a:hover {border-top: 1px solid rgb(174, 217, 225)}
+	ul.nav {list-style-type: none; padding-top: 15px;}
+	ul.nav li {display: inline-block; padding-right: 20px;}
+	h1.logo{font-family:"Gills Sans"; color:rgb(255, 167, 158); font-size: 50px; text-align:left; padding-right: 550px; padding-left: 0px}
+
+    @media (max-width: 1486px) {ul.nav li {padding-right: 15px}}
+	@media (max-width: 1490px) {h1.logo {padding-right: 500px}}
+	@media (max-width: 1425px) {h1.logo {padding-right: 450px}}
+	@media (max-width: 1370px) {h1.logo {padding-right: 400px}}
+	@media (max-width: 1320px) {h1.logo {padding-right: 350px}}
+	@media (max-width: 1270px) {h1.logo {padding-right: 300px}}
+	@media (max-width: 1220px) {h1.logo {padding-right: 250px}}
+	@media (max-width: 1180px) {h1.logo {padding-right: 200px}}
+	@media (max-width: 1120px) {h1.logo {font-size: 40px}; ul.nav a {font-size: 20px}}
+	@media (max-width: 1030px) {h1.logo {padding-right: 150px}}
+	@media (max-width: 980px) {h1.logo {padding-right: 100px}}
+	@media (max-width: 930px) {h1.logo {font-size: 30px}; ul.nav a {font-size: 15px}}
+	@media (max-width: 836px) {h1.logo {padding-right: 50px}}
+	@media (max-width: 785px) {h1.logo {padding-right: 350}}
+	@media (max-width: 735px) {h1.logo {padding-right: 300}}
+	@media (max-width: 685px) {h1.logo {padding-right: 250px}}
+	@media (max-width: 635px) {h1.logo {padding-right: 200px}}
+	@media (max-width: 588px) {h1.logo {padding-right: 150px}}
+	@media (max-width: 535px) {h1.logo {padding-right: 100px}}
+	@media (max-width: 420px) {h1.logo {padding-right: 30px; font-size: 25px} ul.nav a {font-size: 18px}}
+	@media (max-width: 280px) {ul.nav li {padding-right: 50px}}
+
+	.footer {background-color: rgb(250, 244, 222); height: 80px; margin-left: 0px !important; margin-right: 0px !important}
+	ul.footer {list-style-type: none; color: rgb(174, 217, 225); padding-top: 13px; margin-top: 800px; bottom: 0}
+
+    .content{content: ""; display: table; clear: both;}
+
+    .kitchen {float: left; height: 177px; width: 23%; padding: 0 70px}
+    .bathroom {float: left; height: 177px; width: 23%; padding: 0 70px}
+    .bedroom {float: left; height: 177px; width: 23%; padding: 0 70px;}
+
+    .kitchenInfo{background-color: rgb(255, 167, 158)}
+    h2 {color:rgb(95, 101, 115); -webkit-text-stroke: .2px rgb(95, 101, 115); text-align: center; font-size: 30px;}
+    ul.kitchenList{font-size: 22px; color: rgb(250, 244, 222); line-height: 37.9px;}
+
+    
+    .bathroomInfo{background-color: rgb(255, 167, 158);}
+    ul.bathroomList{font-size: 22px; color: rgb(250, 244, 222); line-height: 37.9px;}
+
+    .bedroomInfo{background-color: rgb(255, 167, 158);}
+    ul.bedroomList{font-size: 22px; color: rgb(250, 244, 222); line-height: 37.9px;}
+
+    @media (max-width: 1388px) {.kitchen {padding: 0 60px} .bathroom {padding: 0 60px} .bedroom {padding: 0 60px} img.photos {width: 100%};} 
+    @media (max-width: 1196px) {.kitchen {padding: 0 50} .bathroom {padding: 0 50px} .bedroom {padding: 0 50px}}
+    @media (max-width: 1002px) {.kitchen {padding: 0 40px} .bathroom {padding: 0 40px} .bedroom {padding: 0 40px}} 
+    @media (max-width: 808px) {.kitchen {padding: 0 30px} .bathroom {padding: 0 30px} .bedroom {padding: 0 30px}} 
+    @media (max-width: 720px) {h2 {font-size: 27px} ul.kitchenList{font-size: 15px} ul.bathroomList{font-size: 15px} ul.bedroomList{font-size: 15px}} 
+    @media (max-width: 617px) {.kitchen {width: 70%; margin-bottom: 850px; margin-left: 60px} .bathroom {width: 70%; margin-bottom: 850px; margin-left: 60px} .bedroom {width: 70%; margin-bottom: 45px; margin-left: 60px}}
+    @media (max-width: 570px) {.kitchen {margin-bottom: 765px} .bathroom {margin-bottom: 765px} .bedroom {margin-bottom: 0px}}
+    @media (max-width: 420px) {.kitchen {margin-bottom: 650px; margin-left: 30px} .bathroom {margin-bottom: 650px; margin-left: 30px} .bedroom {margin-bottom: 0px; margin-left: 30px}}
+
+    @media (max-width: 1290px) {ul.footer {margin-top: 700px}}
+    @media (max-width: 880px) {ul.footer {margin-top: 550px}}
+    @media (max-width: 670px) {ul.footer {margin-top: 500px}}
+    @media (max-width: 617px) {ul.footer {margin-top: 850px}}
+    @media (max-width: 490px) {ul.footer {margin-top: 700px}}
+    @media (max-width: 300px) {ul.footer {margin-top: 530px}}
+
+    @media (min-height: 1024px) {ul.footer {margin-top: 800px} .content {margin-top: 150px}}
+
+
+</style>
+</head>
+
+<body>
+
+<div class='header'>
+    <ul class='nav'>
+		<li><h1 class='logo'><img src="logo.png" height="50"/>&nbsp;House Cleaners R Us</h1></li>
+	    <li><a href=”#”>HOME</a></li>
+		<li><a href=”#”>SERVICES</a></li>
+		<li><a href=”#”>CONTACT</a></li>
+	</ul>
+</div>
+
+<div class="content">
+<div class='kitchen'>
+    <div class='kitchenInfo'>
+        <h2>Kitchen</h2>
+        <ul class='kitchenList'>
+            <li>Cabinets</li>
+            <li>Tabletops</li>
+            <li>Fridge</li>
+            <li>Sink</li>
+            <li>Microwave</li>
+            <li>Oven</li>
+            <li>Organization</li>
+            <li>And More!</li>
+        </ul>
+    </div>
+    <div class='kitchenphoto'>
+        <img class='photos' src="kitchenpic.jpg" width="345"/>
+    </div>
+</div>
+<div class='bathroom'>
+    <div class='bathroomInfo'>
+        <h2>Bathroom</h2>
+        <ul class='bathroomList'>
+            <li>Shower</li>
+            <li>Toliet</li>
+            <li>Sink</li>
+            <li>Cabinets</li>
+            <li>Mirror</li>
+            <li>Vanity</li>
+            <li>Floor</li>
+            <li>And More!</li>
+        </ul>
+    </div>
+    <div class='bathroomphoto'>
+        <img class='photos' src="bathroompic.jpg" width="345"/>
+    </div>
+</div>
+<div class='bedroom'>
+    <div class='bedroomInfo'>
+        <h2>Bedroom</h2>
+        <ul class='bedroomList'>
+            <li>Bed</li>
+            <li>Closet</li>
+            <li>Wardrobe</li>
+            <li>Cabinets</li>
+            <li>Desk</li>
+            <li>Bedside</li>
+            <li>Organization</li>
+            <li>And More!</li>
+        </ul>
+    </div>
+    <div class='bedroomphoto'>
+        <img class='photos' src="bedroompic.jpg" width="345"/>
+    </div>
+</div>
+</div>
+
+
+<div class='footer'>
+	<ul class='footer'>
+		<li>100 Lane Hall</li>
+		<li>Somerville, MA 01244 </li>
+	    <li>978-555-5555</li>
+		<li>housecleanrus@gmail.com</li>
+	</ul>
+</div>
+
+
+
+</body>
+</html>
