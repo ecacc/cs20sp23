@@ -8,34 +8,61 @@
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
         crossorigin="anonymous"></script>
         <script>
-            $.get(
-                "https://ecacc.github.io/cs20sp23/songlist.json",
-                function(data) {
-                    for(let i = 0; i < 10; i++) {
-                        document.write(data[i]["title"] + "<br /> <br />");
-                        document.write("Artist(s): ")
-                        for(let j = 0; j < data[i]["artists"].length; j++) {
-                            if(j == (data[i]["artists"].length - 1)) {
-                                document.write(data[i]["artists"][j] + "<br /> <br />");
-                            } else {
-                                document.write(data[i]["artists"][j] + ", ");
+            var genre = ["pop rock", "teen pop", "pop", "power", "dance", "rock", "R&B", "dance pop", "electropop", "synthpop", "electronic rock"];
+            window.onload=function() {
+                document.getElementById("filter").onclick = function () {
+                    strPlaylist = "";
+                    genreSelect = document.getElementById("gSelect").options[document.getElementById("gSelect").selectedIndex].value;
+                    $.get("https://ecacc.github.io/cs20sp23/songlist.json", function(data) {
+                        for(let i = 0; i < 15; i++) {
+                            playlist = false;
+                            for(let k = 0; k < data[i]["genres"].length; k++) {
+                                if(data[i]["genres"][k] == genre[genreSelect]) {
+                                    playlist = true;
+                                }
+                            }
+                            if(playlist) {
+                                strPlaylist = strPlaylist + data[i]["title"] + "<br /> <br />";
+                                strPlaylist = strPlaylist + "Artist(s): ";
+                                for(let j = 0; j < data[i]["artists"].length; j++) {
+                                    if(j == (data[i]["artists"].length - 1)) {
+                                        strPlaylist = strPlaylist + data[i]["artists"][j] + "<br /> <br />";
+                                    } else {
+                                        strPlaylist = strPlaylist + data[i]["artists"][j] + ", ";
+                                    }
+                                }
+                                strPlaylist = strPlaylist + "Genre(s): ";
+                                for(let k = 0; k < data[i]["genres"].length; k++) {
+                                    if(k == (data[i]["genres"].length - 1)) {
+                                        strPlaylist = strPlaylist + data[i]["genres"][k] + "<br /> <br />";
+                                    } else {
+                                        strPlaylist = strPlaylist + data[i]["genres"][k] + ", ";
+                                    }
+                                }
+                                strPlaylist = strPlaylist + "Release Year: " + data[i]["year"] + "<br /> <br /> <br />";
+                                document.getElementById("playlist").innerHTML = strPlaylist;
+
                             }
                         }
-                        document.write("Genre(s): ")
-                        for(let k = 0; k < data[i]["genres"].length; k++) {
-                            if(k == (data[i]["genres"].length - 1)) {
-                                document.write(data[i]["genres"][k] + "<br /> <br />");
-                            } else {
-                                document.write(data[i]["genres"][k] + ", ");
-                            }
-                        }
-                        document.write("Release Year: ")
-                        document.write(data[i]["year"] + "<br /> <br /> <br />")
                     }
+                    )
                 }
-            )
+            }
         </script>
     </head>
     <body>
+        <h1>Choose a genre to get a playlist!</h1>
+        <form>
+            <select id="gSelect" size='1'>
+            <script>
+                var genre = ["pop rock", "teen pop", "pop", "power", "dance", "rock", "R&B", "dance pop", "electropop", "synthpop", "electronic rock"];
+                for(let g = 0; g < genre.length; g++) {
+                    document.write("<option value='" + g + "'>" + genre[g] + "</option>");
+                }
+            </script>
+            </select>
+            <input type="button" value="Filter" id="filter"> 
+        </form>
+        <text id="playlist"></text>
     </body>
 </html>
