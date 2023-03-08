@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JSON Songlist 2</title>
+        <style>
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous"></script>
+        <script>
+            $.get(
+                "http://emilyc.sgedu.site/spring23/assignment7/songlist.json",
+                function(data) {
+                    alert("hello");
+                    document.write(data['title'][0]);
+                }
+            )
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
