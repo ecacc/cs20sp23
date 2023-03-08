@@ -9,10 +9,11 @@
         crossorigin="anonymous"></script>
         <script>
             $.get(
-                "https://ecacc.github.io/cs20sp23/songlist.json",
+                "http://emilyc.sgedu.site/spring23/assignment7/songlist.json",
                 function(data) {
                     for(let i = 0; i < 10; i++) {
                         document.write(data[i]["title"] + "<br /> <br />");
+                        document.write("Artist(s): ")
                         for(let j = 0; j < data[i]["artists"].length; j++) {
                             if(j == (data[i]["artists"].length - 1)) {
                                 document.write(data[i]["artists"][j] + "<br /> <br />");
@@ -20,6 +21,7 @@
                                 document.write(data[i]["artists"][j] + ", ");
                             }
                         }
+                        document.write("Genre(s): ")
                         for(let k = 0; k < data[i]["genres"].length; k++) {
                             if(k == (data[i]["genres"].length - 1)) {
                                 document.write(data[i]["genres"][k] + "<br /> <br />");
@@ -27,6 +29,7 @@
                                 document.write(data[i]["genres"][k] + ", ");
                             }
                         }
+                        document.write("Release Year: ")
                         document.write(data[i]["year"] + "<br /> <br /> <br />")
                     }
                 }
