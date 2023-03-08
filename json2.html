@@ -20,11 +20,11 @@
                                 document.write(data[i]["artists"][j] + ", ");
                             }
                         }
-                        for(let k = 0; k < data[i]["genre"].length; k++) {
-                            if(k == (data[i]["genre"].length - 1)) {
-                                document.write(data[i]["genre"][k] + "<br /> <br />");
+                        for(let k = 0; k < data[i]["genres"].length; k++) {
+                            if(k == (data[i]["genres"].length - 1)) {
+                                document.write(data[i]["genres"][k] + "<br /> <br />");
                             } else {
-                                document.write(data[i]["genre"][k] + ", ");
+                                document.write(data[i]["genres"][k] + ", ");
                             }
                         }
                         document.write(data[i]["year"] + "<br /> <br /> <br />")
