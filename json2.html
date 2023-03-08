@@ -11,8 +11,7 @@
             $.get(
                 "https://ecacc.github.io/cs20sp23/songlist.json",
                 function(data) {
-                    alert("hello");
-                    document.write(data["title"]);
+                    document.write(data[1]["title"]);
                 }
             )
         </script>
