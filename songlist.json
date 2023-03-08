@@ -1,5 +1,13 @@
 [
     {
+        "title" : "Best Friend's Brother",
+        "artists" : ["Victoria Justice"],
+        "genres" : ["synthpop", "teen pop", "dance pop"],
+        "year" : "2010"
+
+    },
+
+    {
         "title" : "The Best of Both Worlds",
         "artists" : ["Hannah Montana"],
         "genres" : ["pop rock", "teen pop"],
@@ -24,6 +32,14 @@
     },
 
     {
+        "title" : "Determinate",
+        "artists" : ["Lemonade Mouth", "Bridgit Mendler", "Adam Hicks"],
+        "genres" : ["synthpop"],
+        "year" : "2011"
+
+    },
+
+    {
         "title" : "Give It Up",
         "artists" : ["Elizabeth Gillies", "Ariana Grande"],
         "genres" : ["pop", "dance", "rock"],
@@ -42,7 +58,7 @@
     {
         "title" : "If I Ruled The World",
         "artists" : ["Big Time Rush", "Iyaz"],
-        "genres" : ["pop", "R&B", "dance & pop"],
+        "genres" : ["pop", "R&B", "dance pop"],
         "year" : "2011"
 
     },
@@ -58,7 +74,7 @@
     {
         "title" : "Naturally",
         "artists" : ["Selena Gomez & The Scene"],
-        "genres" : ["dance & pop", "electropop"],
+        "genres" : ["dance pop", "electropop"],
         "year" : "2009"
 
     },
@@ -66,7 +82,7 @@
     {
         "title" : "Potential Breakup Song",
         "artists" : ["Aly & AJ"],
-        "genres" : ["pop rock", "sythn & pop", "electronic rock"],
+        "genres" : ["pop rock", "sythnpop", "electronic rock"],
         "year" : "2007"
 
     },
@@ -76,6 +92,30 @@
         "artists" : ["Corbin Bleu"],
         "genres" : ["dance pop", "R&B"],
         "year" : "2006"
+
+    },
+
+    {
+        "title" : "Say OK",
+        "artists" : ["Vanessa Hudgens"],
+        "genres" : ["R&B"],
+        "year" : "2007"
+
+    },
+
+    {
+        "title" : "This Is Me",
+        "artists" : ["Demi Lovato", "Joe Jonas"],
+        "genres" : ["pop rock"],
+        "year" : "2007"
+
+    },
+
+    {
+        "title" : "Welcome To Hollywood",
+        "artists" : ["Mitchel Musso"],
+        "genres" : ["pop", "pop rock"],
+        "year" : "2009"
 
     }
 ]
