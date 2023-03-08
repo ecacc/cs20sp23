@@ -12,14 +12,22 @@
                 "https://ecacc.github.io/cs20sp23/songlist.json",
                 function(data) {
                     for(let i = 0; i < 10; i++) {
-                        document.write(data[i]["title"] + "<br />");
+                        document.write(data[i]["title"] + "<br /> <br />");
                         for(let j = 0; j < data[i]["artists"].length; j++) {
                             if(j == (data[i]["artists"].length - 1)) {
-                                document.write(data[i]["artists"][j] + "<br />");
+                                document.write(data[i]["artists"][j] + "<br /> <br />");
                             } else {
                                 document.write(data[i]["artists"][j] + ", ");
                             }
                         }
+                        for(let k = 0; k < data[i]["genre"].length; k++) {
+                            if(k == (data[i]["genre"].length - 1)) {
+                                document.write(data[i]["genre"][k] + "<br /> <br />");
+                            } else {
+                                document.write(data[i]["genre"][k] + ", ");
+                            }
+                        }
+                        document.write(data[i]["year"] + "<br /> <br /> <br />")
                     }
                 }
             )
